@@ -7,6 +7,7 @@ The web application allows users to upload a CSV file containing customer transa
 ## Project Structure
 The project directory structure is as follows:
 
+```
 project/
 │
 |── templates/
@@ -20,6 +21,7 @@ project/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project README file (you're reading it)
 └── app.py                   # Python script to run the Flask application
+```
 
 #### Model Training Pipeline
 
@@ -47,7 +49,9 @@ Overall, these evaluation metrics suggest that my model is performing reasonably
 Python 3.9
 Docker (optional, for containerization)
 Kubernetes (optional, for deployment)
+
 Installation
+
 Clone this repository to your local machine:
 
 git clone https://github.com/shashankjain12/transaction-predictor.git
@@ -65,13 +69,18 @@ python app.py
 The application will be accessible at http://127.0.0.1:5000/ in your web browser.
 
 Deployment
-You can deploy the Flask application using Docker and Kubernetes. Instructions for deployment can be found in the deployment.yaml file and Dockerfile.
+You can deploy the Flask application using Docker and Kubernetes. 
+Instructions for deployment can be found in the deployment.yaml file and Dockerfile.
 
 docker pull shashankjain/transaction-predictor-app:latest
+
 docker run -p 5000:5000 shashankjain/transaction-predictor-app:latest
 
 Usage
 Access the web application in your browser.
+
 Upload a CSV file containing customer transaction data.
+
 Wait for the predictions to be displayed.
+
 View the predictions on whether a customer will make a transaction or not.
