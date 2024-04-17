@@ -60,16 +60,16 @@ git clone https://github.com/shashankjain12/transaction-predictor.git
 Navigate to the project directory:
 
 Install Python dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 Running the Application
 
 To run the Flask application locally, execute the following command:
 
-python app.py
+`python app.py`
 
-The application will be accessible at http://127.0.0.1:5000/ in your web browser.
+The application will be accessible at `http://127.0.0.1:5000/` in your web browser.
 
 Deployment
 
@@ -77,9 +77,9 @@ You can deploy the Flask application using Docker and Kubernetes.
 
 Instructions for deployment can be found in the deployment.yaml file and Dockerfile.
 
-docker pull shashankjain/transaction-predictor-app:latest
+`docker pull shashankjain/transaction-predictor-app:latest`
 
-docker run -p 5000:5000 shashankjain/transaction-predictor-app:latest
+`docker run -p 5000:5000 shashankjain/transaction-predictor-app:latest`
 
 Usage
 Access the web application in your browser.
