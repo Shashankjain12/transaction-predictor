@@ -4,6 +4,28 @@ This project is a Flask web application for deploying a machine learning model t
 ## Overview
 The web application allows users to upload a CSV file containing customer transaction data. The uploaded data is then preprocessed, fed into a pre-trained machine learning model, and predictions are made on whether a customer will make a transaction or not. The predictions are displayed to the user in a user-friendly format.
 
+
+## Architecture Flow Diagram
+
+### Prediction CI/CD Flow Diagram
+
+![alt text](/images/prediction_model.png)
+
+Currently implemented the flow using flask to host in model and then building a CI/CD Pipeline across it.
+
+### Retraining flow Diagram
+Pseudo code is there since model retraining required DWH Setup and the data which is being constantly generated.
+
+![alt text](/images/retraining_model.png)
+
+
+### Running WebAPP
+![alt text](/images/running_webapp.png)
+
+#### Predictions
+![alt text](/images/predictions.png)
+
+
 ## Project Structure
 The project directory structure is as follows:
 

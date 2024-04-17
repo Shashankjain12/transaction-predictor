@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from handlers.app_handler import AppHandler
 from handlers.model_handler import ModelHandler
 import joblib
@@ -25,6 +25,20 @@ def home():
     else:
         return render_template("home.html", message="Upload a CSV file")
 
+
+
+# Render home page with upload form
+@app.route("/retrain-model", methods=["GET", "POST"])
+def train_model():
+    """
+    Added a psuedo code since it requires a DWH Connection to retrain the data
+    """
+    if request.method == "POST":
+        global model_handler
+        if not model_handler:
+            model_handler = ModelHandler(model_path=model_path)
+        new_model_metrics = model_handler.continuous_training()
+    return jsonify({"message": "Model trained success"})
 
 if __name__ == "__main__":
     app.run(debug=True)
