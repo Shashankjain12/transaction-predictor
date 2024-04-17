@@ -47,6 +47,7 @@ Overall, these evaluation metrics suggest that my model is performing reasonably
 
 ### Prerequisites
 Python 3.9
+
 Docker (optional, for containerization)
 Kubernetes (optional, for deployment)
 
@@ -63,13 +64,17 @@ pip install -r requirements.txt
 
 
 Running the Application
+
 To run the Flask application locally, execute the following command:
 
 python app.py
+
 The application will be accessible at http://127.0.0.1:5000/ in your web browser.
 
 Deployment
+
 You can deploy the Flask application using Docker and Kubernetes. 
+
 Instructions for deployment can be found in the deployment.yaml file and Dockerfile.
 
 docker pull shashankjain/transaction-predictor-app:latest
